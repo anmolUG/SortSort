@@ -56,7 +56,9 @@ nav .array-inputs {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
   min-width: 260px;
+  /* max-width: 320px; */
 }
 
 nav .array-inputs p {
