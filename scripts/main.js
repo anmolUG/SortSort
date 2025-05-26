@@ -95,6 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdown.classList.toggle("open");
       if (dropdown.classList.contains("open")) {
         toggle.innerHTML = "Hide Time & Space Complexity ▲";
+        // Smooth scroll to dropdown with animation
+        setTimeout(function () {
+          dropdown.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 350); // Wait for dropdown animation to start
       } else {
         toggle.innerHTML = "Show Time & Space Complexity ▼";
       }
